@@ -1,0 +1,707 @@
+{
+  "version": 2,
+  "tileSize": 32,
+  "atlasSize": [
+    1024,
+    2133
+  ],
+  "rects": {
+    "tile_grass": {
+      "x": 2,
+      "y": 2,
+      "w": 32,
+      "h": 32
+    },
+    "tile_grass_2": {
+      "x": 36,
+      "y": 2,
+      "w": 32,
+      "h": 32
+    },
+    "grass_flower_1": {
+      "x": 70,
+      "y": 2,
+      "w": 32,
+      "h": 32
+    },
+    "grass_flower_2": {
+      "x": 104,
+      "y": 2,
+      "w": 32,
+      "h": 32
+    },
+    "tile_asphalt": {
+      "x": 138,
+      "y": 2,
+      "w": 32,
+      "h": 32
+    },
+    "tile_sidewalk": {
+      "x": 172,
+      "y": 2,
+      "w": 32,
+      "h": 32
+    },
+    "tile_water": {
+      "x": 206,
+      "y": 2,
+      "w": 32,
+      "h": 32
+    },
+    "tile_fence": {
+      "x": 240,
+      "y": 2,
+      "w": 32,
+      "h": 32
+    },
+    "flowerbed": {
+      "x": 274,
+      "y": 2,
+      "w": 64,
+      "h": 32
+    },
+    "midtown_cafe": {
+      "x": 340,
+      "y": 2,
+      "w": 224,
+      "h": 320
+    },
+    "midtown_condo": {
+      "x": 566,
+      "y": 2,
+      "w": 224,
+      "h": 256
+    },
+    "metro_music": {
+      "x": 792,
+      "y": 2,
+      "w": 224,
+      "h": 288
+    },
+    "bldg_ice_cream": {
+      "x": 2,
+      "y": 324,
+      "w": 224,
+      "h": 320
+    },
+    "bldg_condo_brick": {
+      "x": 228,
+      "y": 324,
+      "w": 192,
+      "h": 230
+    },
+    "bldg_condo_tall": {
+      "x": 422,
+      "y": 324,
+      "w": 168,
+      "h": 240
+    },
+    "bldg_hardware": {
+      "x": 592,
+      "y": 324,
+      "w": 213,
+      "h": 240
+    },
+    "bldg_market_1": {
+      "x": 807,
+      "y": 324,
+      "w": 199,
+      "h": 240
+    },
+    "bldg_market_2": {
+      "x": 2,
+      "y": 646,
+      "w": 199,
+      "h": 240
+    },
+    "bldg_villa_1": {
+      "x": 203,
+      "y": 646,
+      "w": 166,
+      "h": 239
+    },
+    "bldg_villa_2": {
+      "x": 371,
+      "y": 646,
+      "w": 166,
+      "h": 239
+    },
+    "bldg_greenhouse": {
+      "x": 539,
+      "y": 646,
+      "w": 240,
+      "h": 224
+    },
+    "bldg_post_office": {
+      "x": 781,
+      "y": 646,
+      "w": 147,
+      "h": 239
+    },
+    "bldg_beach_stage": {
+      "x": 2,
+      "y": 888,
+      "w": 240,
+      "h": 188
+    },
+    "bldg_camper": {
+      "x": 244,
+      "y": 888,
+      "w": 224,
+      "h": 162
+    },
+    "midtown_lamp": {
+      "x": 470,
+      "y": 888,
+      "w": 28,
+      "h": 122
+    },
+    "lamp_modern": {
+      "x": 500,
+      "y": 888,
+      "w": 56,
+      "h": 118
+    },
+    "conservatory_fountain": {
+      "x": 558,
+      "y": 888,
+      "w": 96,
+      "h": 180
+    },
+    "fountain_grand": {
+      "x": 656,
+      "y": 888,
+      "w": 128,
+      "h": 140
+    },
+    "conservatory_tree": {
+      "x": 786,
+      "y": 888,
+      "w": 94,
+      "h": 110
+    },
+    "tree_sycamore_2": {
+      "x": 882,
+      "y": 888,
+      "w": 94,
+      "h": 116
+    },
+    "street_tree": {
+      "x": 2,
+      "y": 1078,
+      "w": 64,
+      "h": 86
+    },
+    "street_tree_2": {
+      "x": 68,
+      "y": 1078,
+      "w": 64,
+      "h": 90
+    },
+    "kyoto_house": {
+      "x": 134,
+      "y": 1078,
+      "w": 224,
+      "h": 209
+    },
+    "woodland_cabin": {
+      "x": 360,
+      "y": 1078,
+      "w": 224,
+      "h": 202
+    },
+    "woodland_tree": {
+      "x": 586,
+      "y": 1078,
+      "w": 128,
+      "h": 104
+    },
+    "woodland_campfire": {
+      "x": 716,
+      "y": 1078,
+      "w": 32,
+      "h": 20
+    },
+    "woodland_tent": {
+      "x": 750,
+      "y": 1078,
+      "w": 122,
+      "h": 118
+    },
+    "coastal_palm": {
+      "x": 874,
+      "y": 1078,
+      "w": 118,
+      "h": 140
+    },
+    "coastal_bar": {
+      "x": 2,
+      "y": 1289,
+      "w": 94,
+      "h": 126
+    },
+    "coastal_umbrella": {
+      "x": 98,
+      "y": 1289,
+      "w": 94,
+      "h": 122
+    },
+    "studio_office": {
+      "x": 194,
+      "y": 1289,
+      "w": 96,
+      "h": 96
+    },
+    "rittenhouse_statue": {
+      "x": 292,
+      "y": 1289,
+      "w": 152,
+      "h": 224
+    },
+    "statue_goat": {
+      "x": 446,
+      "y": 1289,
+      "w": 46,
+      "h": 52
+    },
+    "bus_septa": {
+      "x": 494,
+      "y": 1289,
+      "w": 222,
+      "h": 124
+    },
+    "bus_stop": {
+      "x": 718,
+      "y": 1289,
+      "w": 144,
+      "h": 94
+    },
+    "car_blue": {
+      "x": 864,
+      "y": 1289,
+      "w": 122,
+      "h": 74
+    },
+    "car_red": {
+      "x": 2,
+      "y": 1515,
+      "w": 122,
+      "h": 74
+    },
+    "car_green": {
+      "x": 126,
+      "y": 1515,
+      "w": 154,
+      "h": 80
+    },
+    "car_taxi": {
+      "x": 282,
+      "y": 1515,
+      "w": 154,
+      "h": 80
+    },
+    "bus_septa_left": {
+      "x": 438,
+      "y": 1515,
+      "w": 222,
+      "h": 124
+    },
+    "bus_septa_up": {
+      "x": 662,
+      "y": 1515,
+      "w": 82,
+      "h": 212
+    },
+    "bus_septa_down": {
+      "x": 746,
+      "y": 1515,
+      "w": 84,
+      "h": 214
+    },
+    "car_blue_left": {
+      "x": 832,
+      "y": 1515,
+      "w": 122,
+      "h": 74
+    },
+    "car_blue_up": {
+      "x": 956,
+      "y": 1515,
+      "w": 64,
+      "h": 114
+    },
+    "car_blue_down": {
+      "x": 2,
+      "y": 1731,
+      "w": 64,
+      "h": 114
+    },
+    "car_red_left": {
+      "x": 68,
+      "y": 1731,
+      "w": 122,
+      "h": 74
+    },
+    "car_red_up": {
+      "x": 192,
+      "y": 1731,
+      "w": 64,
+      "h": 114
+    },
+    "car_red_down": {
+      "x": 258,
+      "y": 1731,
+      "w": 64,
+      "h": 114
+    },
+    "car_green_right": {
+      "x": 324,
+      "y": 1731,
+      "w": 154,
+      "h": 80
+    },
+    "car_green_up": {
+      "x": 480,
+      "y": 1731,
+      "w": 74,
+      "h": 144
+    },
+    "car_green_down": {
+      "x": 556,
+      "y": 1731,
+      "w": 74,
+      "h": 142
+    },
+    "car_taxi_right": {
+      "x": 632,
+      "y": 1731,
+      "w": 154,
+      "h": 80
+    },
+    "car_taxi_up": {
+      "x": 788,
+      "y": 1731,
+      "w": 74,
+      "h": 144
+    },
+    "car_taxi_down": {
+      "x": 864,
+      "y": 1731,
+      "w": 74,
+      "h": 142
+    },
+    "bench_h": {
+      "x": 940,
+      "y": 1731,
+      "w": 52,
+      "h": 44
+    },
+    "bench_park": {
+      "x": 2,
+      "y": 1877,
+      "w": 96,
+      "h": 32
+    },
+    "bistro_table": {
+      "x": 100,
+      "y": 1877,
+      "w": 30,
+      "h": 52
+    },
+    "bistro_table_2": {
+      "x": 132,
+      "y": 1877,
+      "w": 30,
+      "h": 38
+    },
+    "mailbox": {
+      "x": 164,
+      "y": 1877,
+      "w": 32,
+      "h": 40
+    },
+    "news_box": {
+      "x": 198,
+      "y": 1877,
+      "w": 96,
+      "h": 94
+    },
+    "hydrant": {
+      "x": 296,
+      "y": 1877,
+      "w": 30,
+      "h": 52
+    },
+    "trashbin": {
+      "x": 328,
+      "y": 1877,
+      "w": 58,
+      "h": 52
+    },
+    "turnstile": {
+      "x": 388,
+      "y": 1877,
+      "w": 46,
+      "h": 102
+    },
+    "subway_stairs": {
+      "x": 436,
+      "y": 1877,
+      "w": 156,
+      "h": 164
+    },
+    "season_pumpkin": {
+      "x": 594,
+      "y": 1877,
+      "w": 40,
+      "h": 36
+    },
+    "season_flower_cart": {
+      "x": 636,
+      "y": 1877,
+      "w": 96,
+      "h": 110
+    },
+    "season_dead_tree": {
+      "x": 734,
+      "y": 1877,
+      "w": 64,
+      "h": 86
+    },
+    "season_xmas_tree": {
+      "x": 800,
+      "y": 1877,
+      "w": 30,
+      "h": 64
+    },
+    "tile_wood": {
+      "x": 832,
+      "y": 1877,
+      "w": 32,
+      "h": 32
+    },
+    "tile_tatami": {
+      "x": 866,
+      "y": 1877,
+      "w": 32,
+      "h": 32
+    },
+    "tile_park_path": {
+      "x": 900,
+      "y": 1877,
+      "w": 32,
+      "h": 32
+    },
+    "tile_plaza": {
+      "x": 934,
+      "y": 1877,
+      "w": 32,
+      "h": 32
+    },
+    "tile_marble": {
+      "x": 968,
+      "y": 1877,
+      "w": 32,
+      "h": 32
+    },
+    "tile_tech": {
+      "x": 2,
+      "y": 2043,
+      "w": 32,
+      "h": 32
+    },
+    "library_bookshelf": {
+      "x": 36,
+      "y": 2043,
+      "w": 50,
+      "h": 60
+    },
+    "grand_piano": {
+      "x": 88,
+      "y": 2043,
+      "w": 54,
+      "h": 72
+    },
+    "modular_synth": {
+      "x": 144,
+      "y": 2043,
+      "w": 58,
+      "h": 28
+    },
+    "coffee_maker": {
+      "x": 204,
+      "y": 2043,
+      "w": 32,
+      "h": 56
+    },
+    "counter_bar": {
+      "x": 238,
+      "y": 2043,
+      "w": 60,
+      "h": 46
+    },
+    "medical_bed": {
+      "x": 300,
+      "y": 2043,
+      "w": 32,
+      "h": 74
+    },
+    "hinoki_tub": {
+      "x": 334,
+      "y": 2043,
+      "w": 28,
+      "h": 68
+    },
+    "turntable": {
+      "x": 364,
+      "y": 2043,
+      "w": 62,
+      "h": 58
+    },
+    "fireplace": {
+      "x": 428,
+      "y": 2043,
+      "w": 64,
+      "h": 80
+    },
+    "desk_computer": {
+      "x": 494,
+      "y": 2043,
+      "w": 96,
+      "h": 44
+    },
+    "tea_table": {
+      "x": 592,
+      "y": 2043,
+      "w": 70,
+      "h": 88
+    },
+    "prop_book": {
+      "x": 664,
+      "y": 2043,
+      "w": 32,
+      "h": 64
+    },
+    "prop_phone": {
+      "x": 698,
+      "y": 2043,
+      "w": 32,
+      "h": 64
+    }
+  },
+  "charFrame": [
+    32,
+    64
+  ],
+  "charLayers": {
+    "bodies": {
+      "file": "chars_bodies.png",
+      "keys": [
+        "body_01",
+        "body_02",
+        "body_03",
+        "body_04",
+        "body_05",
+        "body_06",
+        "body_07",
+        "body_08",
+        "body_09"
+      ]
+    },
+    "eyes": {
+      "file": "chars_eyes.png",
+      "keys": [
+        "eyes_01",
+        "eyes_02",
+        "eyes_03",
+        "eyes_04",
+        "eyes_05",
+        "eyes_06",
+        "eyes_07"
+      ]
+    },
+    "outfits": {
+      "file": "chars_outfits.png",
+      "keys": [
+        "outfit_rittenhouse_trench",
+        "outfit_athletic_tracksuit",
+        "outfit_curtis_evening",
+        "outfit_parc_casual",
+        "outfit_01_01",
+        "outfit_02_01",
+        "outfit_03_01",
+        "outfit_05_01",
+        "outfit_06_01",
+        "outfit_07_01",
+        "outfit_08_01",
+        "outfit_09_01",
+        "outfit_10_01",
+        "outfit_11_01",
+        "outfit_13_01",
+        "outfit_14_01",
+        "outfit_15_01",
+        "outfit_17_01",
+        "outfit_18_01",
+        "outfit_19_01",
+        "outfit_20_01",
+        "outfit_21_01",
+        "outfit_22_01",
+        "outfit_24_01",
+        "outfit_25_01",
+        "outfit_27_01",
+        "outfit_29_01",
+        "outfit_32_01"
+      ]
+    },
+    "hairs": {
+      "file": "chars_hairs.png",
+      "keys": [
+        "hairstyle_01_01",
+        "hairstyle_02_01",
+        "hairstyle_03_01",
+        "hairstyle_04_01",
+        "hairstyle_05_01",
+        "hairstyle_06_01",
+        "hairstyle_07_01",
+        "hairstyle_08_01",
+        "hairstyle_09_01",
+        "hairstyle_10_01",
+        "hairstyle_11_01",
+        "hairstyle_12_01",
+        "hairstyle_13_01",
+        "hairstyle_14_01",
+        "hairstyle_15_01",
+        "hairstyle_16_01",
+        "hairstyle_17_01",
+        "hairstyle_18_01",
+        "hairstyle_19_01",
+        "hairstyle_20_01",
+        "hairstyle_21_01",
+        "hairstyle_22_01",
+        "hairstyle_23_01",
+        "hairstyle_24_01",
+        "hairstyle_25_01",
+        "hairstyle_26_01",
+        "hairstyle_27_01",
+        "hairstyle_28_01"
+      ]
+    },
+    "accessories": {
+      "file": "chars_accessories.png",
+      "keys": [
+        "accessory_03_backpack_01",
+        "accessory_04_snapback_01",
+        "accessory_05_dino_snapback_01",
+        "accessory_06_policeman_hat_01",
+        "accessory_08_detective_hat_01",
+        "accessory_09_zombie_brain_01",
+        "accessory_10_bolt_01",
+        "accessory_11_beanie_01",
+        "accessory_12_mustache_01",
+        "accessory_13_beard_01",
+        "accessory_14_gloves_01",
+        "accessory_15_glasses_01"
+      ]
+    }
+  }
+}

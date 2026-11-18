@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+*.log
+plugin-backups/
+# Private art build inputs written by scripts/pack-biomes.py from your OWN purchased LimeZu packs.
+# The art ships only embedded in desktop/plugin.js; never commit these files (see THIRD_PARTY_NOTICES.md).
+src/assets/*.png
+src/assets/embedded_data.limezu.js
+# Local-only release deny list (personal names etc.); read by scripts/check-release.mjs
+.release-denylist
+# Local handoff / working notes
+HERMES_HANDOFF.md

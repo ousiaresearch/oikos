@@ -1,0 +1,10 @@
+name: oikos
+version: 0.1.0
+description: "Oikos: a local-first pixel habitat page for Hermes Desktop where each of your Hermes profiles becomes a resident with a home, routines and live activity from gateway events."
+author: "Ousia Research"
+kind: standalone
+license: "MIT"
+provides_tools: []
+provides_hooks: []
+requires_env: []
+python_dependencies: []

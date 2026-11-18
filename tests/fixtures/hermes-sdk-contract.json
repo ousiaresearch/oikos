@@ -1,0 +1,557 @@
+{
+  "source": {
+    "repo": "hermes-agent",
+    "commit": "da9c2bd62f"
+  },
+  "connectionStates": [
+    "idle",
+    "connecting",
+    "open",
+    "closed",
+    "error"
+  ],
+  "hostStateAtoms": [
+    "activeSessionId",
+    "awaitingResponse",
+    "busy",
+    "busyBySession",
+    "connectionId",
+    "cwd",
+    "focusedSessionId",
+    "focusedSessionOwner",
+    "focusedSessionProfile",
+    "focusedStoredSessionId",
+    "focusedUsage",
+    "gateway",
+    "model",
+    "profile",
+    "viewport"
+  ],
+  "hostMembers": [
+    "activeConnectionId",
+    "agents",
+    "completeMcpOAuth",
+    "composer",
+    "connections",
+    "deleteProfile",
+    "dropLeftoverProfilePrefs",
+    "ensureAgent",
+    "focusOpenWorkspaceSession",
+    "getGateway",
+    "listPersistedSessions",
+    "logs",
+    "navigate",
+    "newChat",
+    "notify",
+    "notifyError",
+    "onEvent",
+    "openSession",
+    "openWorkspace",
+    "paneVisibility",
+    "pluginDecisions",
+    "profileRoutes",
+    "profiles",
+    "request",
+    "requestProfile",
+    "restartGateway",
+    "retainProfile",
+    "retainProfileSocket",
+    "revealPane",
+    "sessions",
+    "setPersistedSessionHidden",
+    "setWorkspaceOwnerLabel",
+    "setWorkspaceScope",
+    "settings",
+    "skills",
+    "spellcheck",
+    "state",
+    "status",
+    "toolsets",
+    "traceIdentityChange",
+    "undismissPane",
+    "warmAgent",
+    "warmProfile"
+  ],
+  "gatewayEventEnvelopeKeys": [
+    "admission_id",
+    "authority_epoch",
+    "connectionId",
+    "execution_generation",
+    "payload",
+    "profile",
+    "replayEpoch",
+    "replay_epoch",
+    "replayed",
+    "seq",
+    "session_id",
+    "type"
+  ],
+  "backendEventTypes": [
+    "agent.print",
+    "agent.terminal.output",
+    "approval.cancelled",
+    "background.complete",
+    "billing.step_up.verification",
+    "bot_relay.outbox.pending",
+    "browser.progress",
+    "btw.complete",
+    "connection.request",
+    "connection.update",
+    "cron.changed",
+    "display.install.done",
+    "display.install.log",
+    "display.lease",
+    "display.status",
+    "error",
+    "free_tier.challenge",
+    "gateway.ready",
+    "groups.changed",
+    "message.complete",
+    "message.delta",
+    "message.interim",
+    "message.reaction",
+    "message.start",
+    "moa.aggregating",
+    "moa.phase",
+    "moa.progress",
+    "moa.reference",
+    "notice",
+    "notification.clear",
+    "notification.show",
+    "onboarding.ended",
+    "pairing.changed",
+    "pane.reveal",
+    "pet.changed",
+    "pet.generate.progress",
+    "pet.hatch.progress",
+    "platforms.changed",
+    "preview.close",
+    "preview.open",
+    "preview.restart.complete",
+    "preview.restart.progress",
+    "projects.changed",
+    "reaction",
+    "reasoning.available",
+    "reasoning.delta",
+    "request.cancel",
+    "review.summary",
+    "session.control.update",
+    "session.info",
+    "session.reclaimed",
+    "session.resume_progress",
+    "session.title",
+    "session.usage",
+    "sessions.changed",
+    "setup.ready",
+    "skills.changed",
+    "skin.changed",
+    "status.update",
+    "subagent.complete",
+    "subagent.progress",
+    "subagent.spawn_requested",
+    "subagent.start",
+    "subagent.thinking",
+    "subagent.tool",
+    "terminal.close",
+    "thinking.delta",
+    "tip.show",
+    "todo.updated",
+    "tool.complete",
+    "tool.generating",
+    "tool.output_risk",
+    "tool.progress",
+    "tool.start",
+    "voice.interrupted",
+    "voice.partial",
+    "voice.status",
+    "voice.transcript",
+    "wake.detected"
+  ],
+  "clientLocalEventTypes": [
+    "approval.request",
+    "approval.settled",
+    "clarify.request",
+    "clarify.settled",
+    "dashboard.new_session_requested",
+    "gateway.protocol_error",
+    "gateway.reconnecting",
+    "gateway.start_timeout",
+    "gateway.stderr",
+    "session.replay_gap"
+  ],
+  "eventPayloadKeys": {
+    "gateway.ready": {
+      "interface": "GatewayReadyPayload",
+      "keys": [
+        "change_events",
+        "heartbeat",
+        "replay_epoch",
+        "session_authority",
+        "skin"
+      ]
+    },
+    "message.start": {
+      "interface": "MessageStartPayload",
+      "keys": [
+        "display_kind",
+        "display_text",
+        "notification_category",
+        "text",
+        "turn_id"
+      ]
+    },
+    "message.delta": {
+      "interface": "MessageDeltaPayload",
+      "keys": [
+        "offset",
+        "rendered",
+        "segment",
+        "text",
+        "turn_id",
+        "verbose"
+      ]
+    },
+    "message.interim": {
+      "interface": "MessageInterimPayload",
+      "keys": [
+        "already_streamed",
+        "segment",
+        "text",
+        "turn_id"
+      ]
+    },
+    "message.complete": {
+      "interface": "MessageCompletePayload",
+      "keys": [
+        "billing",
+        "error",
+        "error_surface",
+        "failure_reason",
+        "partial",
+        "persisted_turn",
+        "reasoning",
+        "recoverable",
+        "rendered",
+        "response_previewed",
+        "response_reused",
+        "response_transformed",
+        "status",
+        "text",
+        "usage",
+        "warning"
+      ]
+    },
+    "reasoning.delta": {
+      "interface": "StreamDeltaPayload",
+      "keys": [
+        "rendered",
+        "text",
+        "verbose"
+      ]
+    },
+    "reasoning.available": {
+      "interface": "StreamDeltaPayload",
+      "keys": [
+        "rendered",
+        "text",
+        "verbose"
+      ]
+    },
+    "thinking.delta": {
+      "interface": "StreamDeltaPayload",
+      "keys": [
+        "rendered",
+        "text",
+        "verbose"
+      ]
+    },
+    "tool.generating": {
+      "interface": "ToolGeneratingPayload",
+      "keys": [
+        "name"
+      ]
+    },
+    "tool.start": {
+      "interface": "ToolStartPayload",
+      "keys": [
+        "args",
+        "args_text",
+        "context",
+        "labels",
+        "name",
+        "preview",
+        "tool_id"
+      ]
+    },
+    "tool.progress": {
+      "interface": "ToolProgressPayload",
+      "keys": [
+        "message",
+        "name",
+        "percent",
+        "progress",
+        "tool_id",
+        "total"
+      ]
+    },
+    "tool.complete": {
+      "interface": "ToolCompletePayload",
+      "keys": [
+        "args",
+        "duration_s",
+        "image_path",
+        "inline_diff",
+        "labels",
+        "name",
+        "result",
+        "result_text",
+        "revision",
+        "summary",
+        "todos",
+        "tool_id"
+      ]
+    },
+    "subagent.spawn_requested": {
+      "interface": "SubagentEventPayload",
+      "keys": [
+        "api_calls",
+        "child_session_id",
+        "delegation_id",
+        "depth",
+        "duration_seconds",
+        "files_read",
+        "files_written",
+        "goal",
+        "input_tokens",
+        "model",
+        "output_tail",
+        "output_tokens",
+        "parent_id",
+        "reasoning_tokens",
+        "status",
+        "subagent_id",
+        "summary",
+        "task_count",
+        "task_index",
+        "text",
+        "tool_count",
+        "tool_name",
+        "tool_preview",
+        "toolsets"
+      ]
+    },
+    "subagent.start": {
+      "interface": "SubagentEventPayload",
+      "keys": [
+        "api_calls",
+        "child_session_id",
+        "delegation_id",
+        "depth",
+        "duration_seconds",
+        "files_read",
+        "files_written",
+        "goal",
+        "input_tokens",
+        "model",
+        "output_tail",
+        "output_tokens",
+        "parent_id",
+        "reasoning_tokens",
+        "status",
+        "subagent_id",
+        "summary",
+        "task_count",
+        "task_index",
+        "text",
+        "tool_count",
+        "tool_name",
+        "tool_preview",
+        "toolsets"
+      ]
+    },
+    "subagent.progress": {
+      "interface": "SubagentEventPayload",
+      "keys": [
+        "api_calls",
+        "child_session_id",
+        "delegation_id",
+        "depth",
+        "duration_seconds",
+        "files_read",
+        "files_written",
+        "goal",
+        "input_tokens",
+        "model",
+        "output_tail",
+        "output_tokens",
+        "parent_id",
+        "reasoning_tokens",
+        "status",
+        "subagent_id",
+        "summary",
+        "task_count",
+        "task_index",
+        "text",
+        "tool_count",
+        "tool_name",
+        "tool_preview",
+        "toolsets"
+      ]
+    },
+    "subagent.thinking": {
+      "interface": "SubagentEventPayload",
+      "keys": [
+        "api_calls",
+        "child_session_id",
+        "delegation_id",
+        "depth",
+        "duration_seconds",
+        "files_read",
+        "files_written",
+        "goal",
+        "input_tokens",
+        "model",
+        "output_tail",
+        "output_tokens",
+        "parent_id",
+        "reasoning_tokens",
+        "status",
+        "subagent_id",
+        "summary",
+        "task_count",
+        "task_index",
+        "text",
+        "tool_count",
+        "tool_name",
+        "tool_preview",
+        "toolsets"
+      ]
+    },
+    "subagent.tool": {
+      "interface": "SubagentEventPayload",
+      "keys": [
+        "api_calls",
+        "child_session_id",
+        "delegation_id",
+        "depth",
+        "duration_seconds",
+        "files_read",
+        "files_written",
+        "goal",
+        "input_tokens",
+        "model",
+        "output_tail",
+        "output_tokens",
+        "parent_id",
+        "reasoning_tokens",
+        "status",
+        "subagent_id",
+        "summary",
+        "task_count",
+        "task_index",
+        "text",
+        "tool_count",
+        "tool_name",
+        "tool_preview",
+        "toolsets"
+      ]
+    },
+    "subagent.complete": {
+      "interface": "SubagentEventPayload",
+      "keys": [
+        "api_calls",
+        "child_session_id",
+        "delegation_id",
+        "depth",
+        "duration_seconds",
+        "files_read",
+        "files_written",
+        "goal",
+        "input_tokens",
+        "model",
+        "output_tail",
+        "output_tokens",
+        "parent_id",
+        "reasoning_tokens",
+        "status",
+        "subagent_id",
+        "summary",
+        "task_count",
+        "task_index",
+        "text",
+        "tool_count",
+        "tool_name",
+        "tool_preview",
+        "toolsets"
+      ]
+    },
+    "approval.cancelled": {
+      "interface": "ApprovalCancelledPayload",
+      "keys": [
+        "cancelled_count",
+        "reason",
+        "request_ids",
+        "session_id",
+        "stored_session_id"
+      ]
+    },
+    "error": {
+      "interface": "ErrorPayload",
+      "keys": [
+        "message"
+      ]
+    }
+  },
+  "subagentStatus": [
+    "queued",
+    "running",
+    "completed",
+    "failed",
+    "error",
+    "timeout",
+    "interrupted"
+  ],
+  "turnStatus": [
+    "complete",
+    "error",
+    "interrupted"
+  ],
+  "profilesListResultKeys": [
+    "bot_mode_protocol",
+    "install_id",
+    "profiles"
+  ],
+  "profileRowKeys": [
+    "canonical_session",
+    "description",
+    "display_name",
+    "has_avatar",
+    "is_default",
+    "last_session",
+    "model",
+    "name",
+    "path",
+    "previous_names",
+    "provider",
+    "skill_count",
+    "ui_meta",
+    "ui_meta_revisions",
+    "worker_session"
+  ],
+  "llmOneshotParamKeys": [
+    "input",
+    "instructions",
+    "max_tokens",
+    "profile",
+    "session_id",
+    "task",
+    "temperature",
+    "template",
+    "variables"
+  ],
+  "pluginStorageMethods": [
+    "get",
+    "remove",
+    "set"
+  ]
+}

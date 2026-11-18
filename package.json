@@ -1,0 +1,23 @@
+{
+  "name": "oikos",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Oikos: Hermes Desktop plugin, a local pixel habitat where each Hermes profile becomes a resident.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "verify:bundle": "node scripts/verify-bundle.mjs",
+    "install:plugin": "node scripts/install.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check:release": "node scripts/check-release.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
